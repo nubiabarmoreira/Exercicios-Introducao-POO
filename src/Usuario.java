@@ -1,4 +1,6 @@
-public class Usuario () {
+import java.util.ArrayList;
+
+public class Usuario {
 
     public String nome;
     public int id;

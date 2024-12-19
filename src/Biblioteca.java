@@ -1,4 +1,6 @@
-public class Biblioteca () {
+import java.util.ArrayList;
+
+public class Biblioteca {
 
     public ArrayList<Livro> livros;
     public ArrayList<Usuario> usuarios;

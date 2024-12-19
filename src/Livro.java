@@ -1,4 +1,4 @@
-public class Livro () {
+public class Livro {
 
     public String titulo;
     public String autor;
@@ -9,7 +9,7 @@ public class Livro () {
         this.titulo = titulo;
         this.autor = autor;
         this.isbn = isbn;
-        this.disponivel = disponivel
+        this.disponivel = disponivel;
     }
 
     public void exibirDetalhes () {
