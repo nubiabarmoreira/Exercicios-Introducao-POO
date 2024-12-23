@@ -2,7 +2,7 @@ public class Livro {
 
     public String titulo;
     public String autor;
-    public String isbn; // codigo unico do livro
+    public String isbn;
     public boolean disponivel;
 
     public Livro(String titulo, String autor, String isbn, boolean disponivel) {
@@ -13,14 +13,14 @@ public class Livro {
     }
 
     public void exibirDetalhes () {
-
+        System.out.println("Título: " + titulo + ". Autor: " + autor + ". ISBN: " + isbn + ". Disponível para empréstimo: " + disponivel);
     }
 
     public void emprestar () {
-
+        disponivel = false;
     }
 
-    public void devolver () {
-
+    public void devolver() {
+        disponivel = true;
     }
 }

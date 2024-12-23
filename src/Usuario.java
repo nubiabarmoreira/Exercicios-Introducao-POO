@@ -13,14 +13,14 @@ public class Usuario {
     }
 
     public void exibirDetalhes () {
-
+        System.out.println(Usuario.this);
     }
 
     public void adicionarLivro () {
-
+        livrosEmprestados.add();
     }
 
     public void removerLivro () {
-
+        livrosEmprestados.remove();
     }
 }
