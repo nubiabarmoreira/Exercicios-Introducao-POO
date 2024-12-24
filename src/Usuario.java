@@ -6,7 +6,7 @@ public class Usuario {
     public int id;
     public ArrayList<Livro> livrosEmprestados;
 
-    public Usuario (String nome, int id, ArrayList livrosEmprestados) {
+    public Usuario (String nome, int id) {
         this.nomeDoUsuario = nome;
         this.id = id;
         this.livrosEmprestados = new ArrayList<>();

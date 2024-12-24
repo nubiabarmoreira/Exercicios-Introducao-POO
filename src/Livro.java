@@ -5,11 +5,11 @@ public class Livro {
     public String isbn;
     public boolean disponivel;
 
-    public Livro(String titulo, String autor, String isbn, boolean disponivel) {
+    public Livro(String titulo, String autor, String isbn) {
         this.titulo = titulo;
         this.autor = autor;
         this.isbn = isbn;
-        this.disponivel = disponivel;
+        this.disponivel = true;
     }
 
     public void exibirDetalhes () {
@@ -45,5 +45,9 @@ public class Livro {
 
     public String getIsbn () {
         return isbn;
+    }
+
+    public boolean getDisponivel () {
+        return disponivel;
     }
 }
