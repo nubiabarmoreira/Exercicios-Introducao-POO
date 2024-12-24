@@ -6,16 +6,18 @@ public class Biblioteca {
     public ArrayList<Usuario> usuarios;
 
     public Biblioteca (ArrayList<Livro> livros, ArrayList<Usuario> usuarios) {
-        this.livros = livros;
-        this.usuarios = usuarios;
+        this.livros = new ArrayList<>(Livro);
+        this.usuarios = new ArrayList<>(Usuario);
     }
 
     public void cadastrarLivro (Livro livro) {
-
+        livros.add(livro);
+        System.out.println("Livro " + livro.getTitulo() + " cadastrado com sucesso!");
     }
 
     public void cadastrarUsuario (Usuario usuario){
-
+        usuarios.add(usuario);
+        System.out.println("Usuário " + usuario.getNomeDoUsuario() + " cadastrado com sucesso!");
     }
 
     public void realizarEmprestimo (String isbn, int idUsuario) {
