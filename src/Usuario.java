@@ -13,6 +13,7 @@ public class Usuario {
     }
 
     public void exibirDetalhes () {
+        System.out.println("Seguem informações sobre o usuário: ");
         System.out.println("Usuário: " + nomeDoUsuario + ". ID: " + id + ". Livros que estão emprestados para o usuário: " + livrosEmprestados);
     }
 

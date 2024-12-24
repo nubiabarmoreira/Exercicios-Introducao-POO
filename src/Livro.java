@@ -13,6 +13,7 @@ public class Livro {
     }
 
     public void exibirDetalhes () {
+        System.out.println("Seguem informações sobre o livro: ");
         System.out.println("Título: " + titulo + ". Autor: " + autor + ". ISBN: " + isbn + ". Disponível para empréstimo: " + disponivel);
     }
 
