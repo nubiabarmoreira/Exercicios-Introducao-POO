@@ -17,10 +17,28 @@ public class Livro {
     }
 
     public void emprestar () {
-        disponivel = false;
+        if(disponivel = true){
+            disponivel = false;
+            System.out.println("O livro " + titulo + " foi emprestado com sucesso!");
+        } else {
+            System.out.println("O livro " + titulo + " já se encontra emprestado a outro usuário.");
+        }
     }
 
     public void devolver() {
-        disponivel = true;
+        if (disponivel = false){
+            disponivel = true;
+            System.out.println("O livro " + titulo + " foi devolvido com sucesso!");
+        } else {
+            System.out.println("O livro " + titulo + " já se encontrava disponível.");
+        }
+    }
+
+    public boolean getDisponivel () {
+        return disponivel;
+    }
+
+    public String getTitulo () {
+        return titulo;
     }
 }
