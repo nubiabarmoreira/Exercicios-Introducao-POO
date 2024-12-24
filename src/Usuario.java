@@ -37,4 +37,8 @@ public class Usuario {
             return true;
         }
     }
+
+    public String getNomeDoUsuario () {
+        return nomeDoUsuario;
+    }
 }
