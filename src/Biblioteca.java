@@ -6,8 +6,8 @@ public class Biblioteca {
     public ArrayList<Usuario> usuarios;
 
     public Biblioteca (ArrayList<Livro> livros, ArrayList<Usuario> usuarios) {
-        this.livros = new ArrayList<>(Livro);
-        this.usuarios = new ArrayList<>(Usuario);
+        this.livros = new ArrayList<>();
+        this.usuarios = new ArrayList<>();
     }
 
     public void cadastrarLivro (Livro livro) {
@@ -29,6 +29,11 @@ public class Biblioteca {
     }
 
     public void exibirLivrosDisponiveis () {
-
+        System.out.println("Segue listagem de livros disponiveis: ");
+        for(Livro livro : livros){
+            if(livro.disponivel){
+                System.out.println("Título: " + livro.getTitulo() + ". Autor: " + livro.getAutor() + ". ISBN: " + livro.getIsbn());
+            }
+        }
     }
 }
