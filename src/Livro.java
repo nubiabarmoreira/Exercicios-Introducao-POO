@@ -35,11 +35,15 @@ public class Livro {
         }
     }
 
-    public boolean getDisponivel () {
-        return disponivel;
-    }
-
     public String getTitulo () {
         return titulo;
+    }
+
+    public String getAutor () {
+        return autor;
+    }
+
+    public String getIsbn () {
+        return isbn;
     }
 }
